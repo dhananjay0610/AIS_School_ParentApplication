@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "893336204154",
+    "project_id": "collegechatapp-bfc83",
+    "storage_bucket": "collegechatapp-bfc83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893336204154:android:b6a8efb5f688e34db6dcc3",
+        "android_client_info": {
+          "package_name": "com.rawtalent.schoolsystemuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893336204154-09urq4q7r5rblsa5e8gmo8j4l8jsfffp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3q1U891fq7to7vliOhsZ8bbg9bJqkJio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893336204154-09urq4q7r5rblsa5e8gmo8j4l8jsfffp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

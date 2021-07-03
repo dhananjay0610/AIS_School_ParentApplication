@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rawtalent.schoolsystemuser">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SchoolSystemUser">
+        <activity android:name=".GroupChat.GroupData">
+
+        </activity>
+        <activity android:name=".ShowUserProfile" />
+        <activity
+            android:name=".PersonalChat.PersonalChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GroupChat.ShowImage" />
+        <activity
+            android:name=".GroupChat.GroupChat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavigationActivities.Contacts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavigationActivities.ProfileSettings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavigationActivities.DashBoard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".SetProfile" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

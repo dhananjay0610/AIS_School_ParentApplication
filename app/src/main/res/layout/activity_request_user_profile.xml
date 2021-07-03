@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowUserProfile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/show_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/profileicon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="name"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:id="@+id/showname"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="this is the displayed statusdfhkjhfjhdf dsfjbkjfb jbfj"
+            android:gravity="center_horizontal"
+            android:id="@+id/showbio"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="loading..."
+            android:gravity="center_horizontal"
+            android:id="@+id/showrequeststatus"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/send"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/remark_green"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Send Request"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            >
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/cancel"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/remark_red"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Cancel Request"
+            android:layout_gravity="center_horizontal"
+            >
+        </Button>
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/loaderlayout"
+        >
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ProgressBar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
